@@ -1,0 +1,95 @@
+@keyframes moveInLeft {
+  0% {
+      opacity: 0;
+      transform: translateX(-10rem);
+  }
+
+  80% {
+      transform: translateX(1rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+
+
+@keyframes moveInRight {
+  0% {
+      opacity: 0;
+      transform: translateX(10rem);
+  }
+
+  80% {
+      transform: translateX(-1rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+      opacity: 0;
+      transform: translateY(3rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+@keyframes moveInTop {
+  0% {
+      opacity: 0;
+      transform: translateY(-3rem);
+  }
+
+  100% {
+      opacity: 1;
+      transform: translate(0);
+  }
+}
+
+@keyframes bounceInDown {
+    0% {
+       transform: translateY(-5px);
+    }
+    40% {
+       transform: translateY(5px) scale(1.02);
+    }
+    80% {
+       transform: translateY(-5px);
+    }
+    100% {
+       transform: translateY(-5px);
+    }
+ } 
+
+ @keyframes loadingX {
+    0% { transform: scaleX(0); }
+    100% { transform: scaleX(1); }
+ }
+ @keyframes loadingY {
+    0% { transform: scaleY(0); }
+    100% { transform: scaleY(1); }
+ }
+ @keyframes loadingLogo {
+    0% { opacity: 0 ;}
+    5% { opacity: .1 ;}
+    10% { opacity: .3 ;}
+    15% { opacity: 0 ;}
+    20% { opacity: .3 ;}
+    30% { opacity: .7 ;}
+    40% { opacity: .8 ;}
+    50% { opacity: .5 ;}
+    60% { opacity: .8 ;}
+    70% { opacity: .9 ;}
+    80% { opacity: .8 ;}
+    90% { opacity: .9 ;}
+    100% { opacity: 1 ;}
+ }

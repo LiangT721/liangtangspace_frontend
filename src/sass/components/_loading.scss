@@ -1,0 +1,66 @@
+.home__loading {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  background-color: $color-primary-dark;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__container {
+    transition: background-color 0.3s ease-in-out;
+    position: relative;
+    & > div {
+      border: none;
+      // background-color: #fff;
+      margin: 0.3rem;
+      opacity: 1;
+      animation: loadingLogo 1s linear 2s;
+      animation-fill-mode: backwards;
+    }
+    span {
+      position: absolute;
+      background-color: $color-logo;
+    }
+    &-top {
+      height: 1px;
+      width: 100%;
+      top: 0;
+      left: 0;
+      transform: scaleX(1);
+      transform-origin: left;
+      animation: loadingX .5s linear ;
+    }
+    
+    &-right {
+      width: 1px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      transform: scaleY(1);
+      transform-origin: top;
+      animation: loadingY .5s linear .5s ;
+      animation-fill-mode: backwards;
+    }
+    &-bottom {
+      height: 1px;
+      width: 100%;
+      bottom: 0;
+      right: 0;
+      transform: scaleX(1);
+      transform-origin: right;
+      animation: loadingX .5s linear 1s;
+      animation-fill-mode: backwards;
+    }
+    &-left {
+      width: 1px;
+      height: 100%;
+      top: 0;
+      left: 0;
+      transform: scaleY(1);
+      transform-origin: bottom;
+      animation: loadingY .5s linear 1.5s;
+      animation-fill-mode: backwards;
+    }
+  }
+}

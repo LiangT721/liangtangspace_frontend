@@ -1,0 +1,231 @@
+.home__portfolio {
+  width: 70%;
+  margin-left: 15%;
+  padding-top: 10rem;
+  &__heading {
+    width: 80%;
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    align-items: center;
+    column-gap: 2rem;
+    height: 6rem;
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: $color-font-bright;
+    }
+  }
+
+  &__container {
+    margin-top: 10rem;
+    display: grid;
+    row-gap: 10rem;
+    justify-content: center;
+  }
+
+  &__item {
+    height: 40rem;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    row-gap: 1rem;
+    align-items: center;
+
+    color: $color-font-light;
+    font-size: 1.6rem;
+    font-family: $font-text;
+  }
+  &__img {
+    align-items: center;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    aspect-ratio: 5 / 3;
+    cursor: pointer;
+    & > img {
+      width: 100%;
+      // height: 100%;
+      object-fit: cover;
+      filter: grayscale(70%);
+      @media only screen and (hover: none) {
+        filter: none;
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background-color: rgba($color-primary, 0.5);
+      transition: all 0.2s linear;
+      @media only screen and (hover: none) {
+        background-color: rgba($color-primary, 0);
+        content: none;
+      }
+    }
+    &:hover::after {
+      background-color: rgba($color-tertiary, 0);
+    }
+    &:hover img {
+      filter: grayscale(0);
+    }
+  }
+
+  &__text {
+    height: 100%;
+    padding: 1.5rem;
+    transition: all 0.5s linear;
+    display: grid;
+    grid-template-rows: repeat(2, min-content) 1fr repeat(2, min-content);
+    align-items: center;
+
+    &-left {
+      grid-column: 5 / 8;
+      justify-items: end;
+    }
+    &-right {
+      grid-column: 1 / 4;
+      justify-items: start;
+      grid-row: 1 / -1;
+    }
+  }
+
+  &__sub-title {
+    color: $color-font-bright;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+  }
+
+  &__title {
+    color: $color-font-light;
+    text-transform: uppercase;
+    font-size: 2rem;
+  }
+
+  &__description {
+    background-color: $color-tertiary;
+    padding: 2rem 4rem;
+    margin: 1.5rem 0;
+    width: 130%;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    box-shadow: $shadow-light;
+
+    &-left {
+      margin-right: -5rem;
+      text-align: right;
+    }
+    &-right {
+      margin-left: -5rem;
+    }
+  }
+  &__sub-description {
+    margin-bottom: 3rem;
+    font-size: 1.4rem;
+  }
+
+  &__btns {
+    display: flex;
+  }
+
+  &__btn {
+    width: 2rem;
+    height: 2rem;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &-left-img {
+    grid-column: 1 / 5;
+  }
+  &-right-img {
+    grid-column: 4 / 8;
+  }
+
+  &-left-text {
+    grid-column: 5 / 8;
+    justify-items: end;
+  }
+  &-right-text {
+    grid-column: 1 / 4;
+    justify-items: start;
+    grid-row: 1 / -1;
+  }
+  @media only screen and (max-width: $bp-sm) {
+    &__item {
+      display: block;
+      grid-template-columns: 1fr;
+      height: min-content;
+      background-color: rgba(255, 255, 255, 0.315);
+      width: 80%;
+      margin-left: 10%;
+      border-radius: 5px;
+      overflow: hidden;
+      box-shadow: $shadow-dark;
+    }
+
+    &__text {
+      padding: 2rem 0;
+      // row-gap: 1rem;
+      display: block;
+      // grid-template-rows: repeat(2, min-content) 1fr repeat(2, min-content);
+      text-align: end;
+      justify-items: end;
+
+      & > * {
+        &:not(:last-child) {
+          margin-bottom: .5rem;
+        }
+      }
+    }
+
+    &-left-img,
+    &-right-img {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+    }
+    &-left-text,
+    &-right-text {
+      grid-column: 1 / 2;
+      grid-row: 2 / 3;
+    }
+
+    &__img {
+      border-radius: 0;
+      height: 100%;
+    }
+
+    &__description {
+      background-color: rgba($color-tertiary, 0.3);
+      width: 100%;
+      box-shadow: none;
+      font-size: 1.5rem;
+      padding: 2rem;
+      margin: 0;
+      text-align: left;
+      &-left {
+        margin-right: 0;
+        text-align: left;
+      }
+      &-right {
+        margin-left: 0;
+      }
+    }
+
+    &__sub-title,
+    &__title,
+    &__sub-description,
+    &__btns {
+      padding-right: 2rem;
+    }
+    &__btns {
+     float: right;
+     margin-bottom: 2rem;
+    }
+  }
+}

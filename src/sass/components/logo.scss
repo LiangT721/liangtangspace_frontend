@@ -1,0 +1,73 @@
+.logo {
+  width: calc($logo-reat-width * 24);
+  height: calc($logo-reat-width * 24);
+
+  padding: calc($logo-reat-width * 3 - 1px);
+  border: 1px solid $color-logo;
+
+  cursor: pointer;
+
+  // @include clearfix;
+
+  &__left-shapes {
+    width: calc($logo-reat-width * 8);
+    height: calc($logo-reat-width * 18);
+    float: left;
+    margin-right: calc($logo-reat-width * 2);
+    position: relative;
+
+    &--rect {
+      background-color: $color-logo;
+      width: calc($logo-reat-width * 3);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+
+      &::before {
+        content: "";
+        background-color: $color-logo;
+        width: calc($logo-reat-width * 3);
+        height: calc($logo-reat-width * 3);
+        position: absolute;
+        top: 0;
+        right: calc($logo-reat-width * 5);
+      }
+    }
+  }
+
+  &__right-shapes {
+    width: calc($logo-reat-width * 8);
+    height: calc($logo-reat-width * 18);
+    float: left;
+    position: relative;
+
+    &--rect {
+      background-color: $color-logo;
+      width: calc($logo-reat-width * 3);
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      &::before {
+        content: "";
+        background-color: $color-logo;
+        width: calc($logo-reat-width * 3);
+        height: calc($logo-reat-width * 3);
+        position: absolute;
+        top: 0;
+        left: calc($logo-reat-width * 5);
+      }
+      &::after {
+        content: "";
+        background-color: $color-logo;
+        width: calc($logo-reat-width * 3);
+        height: calc($logo-reat-width * 3);
+        position: absolute;
+        top: calc($logo-reat-width * 15);
+        left: calc($logo-reat-width * 5);
+      }
+    }
+  }
+}

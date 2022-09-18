@@ -1,0 +1,59 @@
+//COLOR
+$color-primary: #0C61B1;
+// $color-primary-dark: #00528C;
+$color-primary-dark: #0b328c;
+$color-primary-light: #8547ed;
+// $color-primary-light: #0092FA;
+
+$color-secondary-light:#01ffff;
+$color-secondary-bright:$color-secondary-light;
+
+$color-logo:$color-secondary-light;
+
+$color-bg-pink:#b5179e;
+$color-bg-purple:#560bad;
+$color-bg-orange:#F75426;
+
+
+
+$color-tertiary:#007678;
+
+$color-font-light: #E3F0FF;
+$color-font-bright:#71FACA;
+
+
+
+$color-grey-light-1: #f7f7f7;
+$color-grey-dark: #777;
+$color-white: #fff;
+$color-black: #000;
+
+//FONT
+$default-font-size:1.6rem;
+$font-display:'Inter', sans-serif;
+$font-text:'Roboto Mono', monospace;
+
+//LOGO
+
+$logo-reat-width: 0.2rem;
+
+//GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+//shadow
+$shadow-light:2px 3px 4px rgba($color-primary-dark, .5);
+$shadow-dark:1px 2px 2px rgba($color-black, .333),
+             2px 4px 4px rgba($color-black, .333),
+             3px 6px 6px rgba($color-black, .333);
+
+
+
+$bp-hg: 87.5em; // 1400px
+$bp-lg: 75em; // 1200px
+$bp-md: 56.25em; // 900px
+$bp-sm: 37.5em // 600px
+
+
+

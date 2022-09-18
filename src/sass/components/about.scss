@@ -1,0 +1,95 @@
+.home__about {
+  width: 80%;
+  margin-left: 5%;
+  padding-top: 10rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  column-gap: 6rem;
+  padding-bottom: 20rem;
+
+  @media only screen and (max-width: $bp-hg) {
+    width: 70%;
+    margin-left: 15%;
+  }
+  @media only screen and (max-width: $bp-md) {
+    grid-template-columns: 2fr 2fr;
+    align-items: center;
+    column-gap: 4rem;
+  }
+  @media only screen and (max-width: $bp-sm) {
+    grid-template-columns: 1fr;
+    column-gap: none;
+    padding-bottom: 0;
+  }
+
+  &-heading {
+    grid-column: 1 / -1;
+
+    border-bottom: 1px solid $color-font-bright;
+  }
+
+  &__text-container {
+    font-family: $font-text;
+    font-size: 1.6rem;
+    color: $color-font-light;
+    padding: 6rem 0;
+  }
+
+  &__img-container {
+    width: 100%;
+    padding: 3rem;
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+  }
+  &__img-container:hover &__img {
+    background-image: url("../../imgs/portrait.png");
+  }
+  &__img-container:hover &__img::after {
+    top: 0;
+    left: 0;
+  }
+
+  &__img {
+    width: 80%;
+    height: 80%;
+    background-image: linear-gradient(
+        rgba($color-primary-light, 0.4),
+        rgba($color-primary-light, 0.4)
+      ),
+      url("../../imgs/portrait.png");
+    @media only screen and (max-width: $bp-sm), screen and (hover: none) {
+      background-image: url("../../imgs/portrait.png");
+    }
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    transition: all 0.3s linear;
+    z-index: 3;
+
+    @media only screen and (max-width: $bp-md) {
+      width: 100%;
+      height: 100%;
+    }
+    @media only screen and (max-width: $bp-sm) {
+      width: 60%;
+      height: 60%;
+      margin-left: 20%;
+    }
+
+    &::after {
+      content: "";
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 10%;
+      left: 10%;
+      border: 2px solid $color-secondary-bright;
+      transform: translateZ(-5px);
+      transition: all 0.2s linear;
+      @media only screen and (max-width: $bp-sm), screen and (hover: none) {
+        top: 0;
+      left: 0;
+      }
+    }
+  }
+}

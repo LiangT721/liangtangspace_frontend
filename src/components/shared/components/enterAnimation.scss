@@ -1,0 +1,34 @@
+.share__animation__entrance {
+  &__left-start,
+  &__right-start,
+  &__bottom-start,
+  &__center-start {
+    transition: all 0.3s linear;
+  }
+
+  &__left-start {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  &__right-start {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  &__bottom-start {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  &__center-start {
+    transform: scale(.1);
+    opacity: 0;
+  }
+
+  &__end
+  {
+    transform: translateX(0) scale(1);
+    opacity: 1;
+  }
+
+}
+

@@ -1,0 +1,79 @@
+.home{
+  width: 100%;
+  position: relative;
+  background-image: linear-gradient(to right bottom,$color-primary-dark, $color-primary-light);
+  min-height: 100vh;
+  overflow: hidden;
+
+  &__body{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10rem ;
+    position: relative;
+    display: grid;
+    row-gap: 5rem;
+    // background-color: rgb(71, 71, 71);
+    z-index: 10;
+
+    animation: moveInBottom 1s linear .5s;
+    animation-fill-mode: backwards;
+
+    @media only screen and (max-width: $bp-sm) {
+      padding-top: 0;
+    }
+  }
+}
+
+.heading-3 {
+  font-family: $font-display;
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  background-image: linear-gradient($color-font-bright,$color-font-light);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.btn__icon{
+  fill: #fff;
+  width: 100%;
+  height: 100%;
+  transition: all .3s linear;
+
+  &:hover {
+    fill:$color-font-bright
+  }
+}
+
+.link-btn__large{
+  
+  padding: .5rem 1rem;
+  margin-top: 2rem;
+  border-radius: 2px;
+  box-shadow: $shadow-light;
+  &,
+  &:visited,
+  &:active{
+    font-size: 1.6rem;
+    font-family: $font-text;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background-color: $color-secondary-bright;
+    color: $color-primary;
+    transition: all .2s linear;
+    filter: grayscale(50%);
+  }
+  
+  &:hover{
+    box-shadow: $shadow-dark;
+    filter: grayscale(0);
+  }
+  &:active{
+    box-shadow: $shadow-light;
+  }
+}
+
+// #id{
+//   width: 100%;
+//   height: 10rem;
+// }

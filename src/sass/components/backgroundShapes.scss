@@ -1,0 +1,331 @@
+.home__background {
+  &__shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    // background-color: #fff;
+    z-index: 0;
+    & > * {
+      position: absolute;
+      transition: all .3s linear;
+    }
+  }
+  &__shape__1-1 {
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    background-image: radial-gradient(
+      rgba($color-bg-pink, 0.2),
+      rgba($color-bg-pink, 0.4)
+    );
+    border-radius: 50%;
+    top: -20vh;
+    left: 50vw;
+    @media only screen and (max-width: $bp-lg) {
+      top: -40vh;
+      aspect-ratio: 1 / 1;
+    }
+    @media only screen and (max-width: $bp-sm) {
+      width: 130%;
+      top: -30vh;
+      left: 40vw;
+      aspect-ratio: 1 / 1;
+    }
+  }
+
+  &__shape__2-1 {
+    width: 110%;
+    aspect-ratio: 2 / 1;
+    background-image: radial-gradient(
+      rgba($color-bg-pink, 0.3),
+      rgba($color-bg-pink, 0.5)
+    );
+    border-radius: 50%;
+    top: 30vh;
+    right: -45vw;
+
+    @media only screen and (max-width: $bp-hg) {
+      aspect-ratio: 4 / 3;
+    }
+    @media only screen and (max-width: $bp-lg) {
+      top: 40vh;
+      aspect-ratio: 1/ 1;
+      width: 120%;
+    }
+   
+    @media only screen and (max-width: $bp-sm) {
+      width: 180%;
+      top: 50vh;
+      right: -50vw;
+      aspect-ratio: 1 / 1;
+      background-image: radial-gradient(
+        rgba($color-bg-pink, 0.5),
+        rgba($color-bg-pink, 0.1)
+      );
+    }
+  }
+  &__shape__1-2 {
+    width: 100%;
+    aspect-ratio: 5 / 3;
+    background-image: radial-gradient(
+      transparent,
+      rgba($color-bg-pink, 0.5)
+
+    );
+    border-radius: 50%;
+    top: 500px;
+    left: -30vw;
+
+    @media only screen and (max-width: $bp-hg) {
+      aspect-ratio: 1/ 1;
+      top: 0;
+      left: -40vw;
+      width: 120%;
+    }
+    @media only screen and (max-width: $bp-lg) {
+      top: 40vh;
+      aspect-ratio: 1/ 1;
+      width: 120%;
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      top: 0px;
+      aspect-ratio: 1/ 1;
+      left: -40vw;
+      width: 120%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      top: 100vh;
+      width: 50vh;
+      aspect-ratio: 1 / 1;
+    }
+  }
+  &__shape__2-2 {
+    width: 90%;
+    aspect-ratio: 5 / 3;
+    background-image: radial-gradient(
+      rgba($color-bg-pink, 0.3),
+      rgba($color-bg-pink, 0.1)
+    );
+    border-radius: 50%;
+    top: 1000px;
+    left: 70vw;
+
+    @media only screen and (max-width: $bp-hg) {
+      aspect-ratio: 1/ 1;
+      top: 800px;
+      left: 30vw;
+      width: 120%;
+    }
+
+    @media only screen and (max-width: $bp-md) {
+      top: 500px;
+      aspect-ratio: 1/ 1;
+      left: -40vw;
+      width: 120%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      top: 150vh;
+      left: 50vw;
+      width: 50vh;
+      aspect-ratio: 1 / 1;
+    }
+  }
+
+  &__shape__1-3 {
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    background-image: radial-gradient(
+      rgba($color-bg-orange, 0.5),
+      transparent
+
+    );
+    border-radius: 50%;
+    top: 1000px;
+    left: 60vw;
+    @media only screen and (max-width: $bp-hg) {
+      aspect-ratio: 1/ 1;
+      top: 800px;
+      left: 30vw;
+      width: 120%;
+    }
+
+
+    @media only screen and (max-width: $bp-sm) {
+      top: 1600px;
+      left: 50vw;
+      width: 65vh;
+      aspect-ratio: 1 / 1;
+    }
+  }
+  &__shape__2-3 {
+    width: 110%;
+    aspect-ratio: 5 / 3;
+    background-image: radial-gradient(
+      rgba($color-bg-pink, 0.3),
+      rgba($color-bg-pink, 0.1)
+    );
+    border-radius: 50%;
+    top: 1500px;
+    left: -50vw;
+
+    @media only screen and (max-width: $bp-hg) {
+      aspect-ratio: 1/ 1;
+      top: 1700px;
+      left: -50vw;
+      width: 120%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      top: 1900px;
+      left: -50vw;
+      width: 60vh;
+    }
+  }
+
+  &__shape__1-4 {
+    width: 100%;
+    aspect-ratio: 5 / 4;
+    background-image: radial-gradient(
+      rgba($color-bg-pink, 0.6),
+      transparent
+
+    );
+    border-radius: 50%;
+    top: 2500px;
+    left: -800px;
+
+    @media only screen and (max-width: $bp-hg) {
+      aspect-ratio: 1/ 1;
+      top: 1700px;
+      left: -50vw;
+      width: 120%;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      top: 2600px;
+      left: -50vw;
+      width: 60vh;
+      aspect-ratio: 1 / 1;
+    }
+  }
+  &__shape__2-4 {
+    width: 110%;
+    aspect-ratio: 5 / 4;
+    background-image: radial-gradient(
+      rgba($color-bg-pink, 0.3),
+      rgba($color-bg-pink, 0.1)
+    );
+    border-radius: 50%;
+    top: 3000px;
+    left: 50vw;
+
+    @media only screen and (max-width: $bp-sm) {
+      top: 3200px;
+      left: 50vw;
+      width: 60vh;
+      aspect-ratio: 1 / 1;
+    }
+  }
+  &__shape__1-5 {
+    width: 100%;
+    aspect-ratio: 5 / 3;
+    background-image: radial-gradient(
+      transparent,
+      rgba($color-bg-purple, 0.5)
+
+    );
+    border-radius: 50%;
+    top: 4200px;
+    left: 800px;
+
+    
+    @media only screen and (max-width: $bp-hg) {
+      aspect-ratio: 1/ 1;
+      top: 4200px;
+      left: 40vw;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      top: 4000px;
+      left: -50vw;
+      width: 60vh;
+      aspect-ratio: 1 / 1;
+    }
+  }
+  &__shape__2-5 {
+    width: 110%;
+    aspect-ratio: 5 / 3;
+    background-image: radial-gradient(
+      rgba($color-bg-pink, 0.3),
+      rgba($color-bg-pink, 0.1)
+    );
+    border-radius: 50%;
+    top: 4000px;
+    left: -50vw;
+
+    @media only screen and (max-width: $bp-hg) {
+      aspect-ratio: 1/ 1;
+      top: 3600px;
+    }
+    @media only screen and (max-width: $bp-sm) {
+      top: 4500px;
+      left: 50vw;
+      width: 60vh;
+      aspect-ratio: 1 / 1;
+    }
+  }
+
+  &__shape__1-6 {
+    width: 100%;
+    aspect-ratio: 5 / 3;
+    background-image: radial-gradient(
+      transparent,
+      rgba($color-bg-purple, 0.5)
+
+    );
+    border-radius: 50%;
+    top: 4000px;
+    left: -500px;
+    
+    @media only screen and (max-width: $bp-hg) {
+      aspect-ratio: 1/ 1;
+      top: 4000px;
+    }
+    
+    @media only screen and (max-width: $bp-sm) {
+      top: 5000px;
+      left: 50vw;
+      width: 60vh;
+      aspect-ratio: 1 / 1;
+    }
+  }
+
+  &__shape__2-6 {
+    width: 110%;
+    aspect-ratio: 5 / 3;
+    background-image: radial-gradient(
+      rgba($color-bg-pink, 0.3),
+      rgba($color-bg-pink, 0.1)
+    );
+    border-radius: 50%;
+    top: 4400px;
+    left: 50vw;
+    @media only screen and (max-width: $bp-hg) {
+      aspect-ratio: 1/ 1;
+      top: 4000px;
+    }
+    @media only screen and (max-width: $bp-sm) {
+      top: 5500px;
+      left: -50vw;
+      width: 60vh;
+      aspect-ratio: 1 / 1;
+    }
+  }
+
+
+ 
+}
