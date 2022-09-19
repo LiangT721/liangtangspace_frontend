@@ -11,8 +11,10 @@
   padding: 2rem;
   transition: all 0.3s linear;
 
-  animation: moveInTop 1s linear;
-  animation-fill-mode: backwards;
+  &__desktop__enter {
+    animation: moveInTop 1s linear;
+    animation-fill-mode: backwards;
+  }
 
   &__checkbox__logo,
   &__checkbox__icon {
@@ -146,8 +148,6 @@
     display: block;
     padding: 0;
 
-
-
     &__checkbox__icon {
       display: block;
       position: fixed;
@@ -159,8 +159,6 @@
     &__logo--container {
       display: none;
     }
-
-    
 
     &__nav {
       position: fixed;
@@ -174,7 +172,7 @@
       align-items: space-around;
       padding-top: 10vh;
       transform: translateX(100%);
-      transition: all .3s ease-in-out;
+      transition: all 0.3s ease-in-out;
 
       &__list {
         grid-template-columns: 1fr;
@@ -182,11 +180,12 @@
       }
 
       &__link {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
+        font-family: $font-display;
         text-transform: uppercase;
       }
     }
-    &__checkbox__logo:checked ~ &__nav{
+    &__checkbox__logo:checked ~ &__nav {
       transform: translateX(0);
     }
 

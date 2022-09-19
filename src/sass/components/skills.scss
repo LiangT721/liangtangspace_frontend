@@ -43,6 +43,10 @@
     grid-template-columns: repeat(3, 1fr);
     border-left:none;
     margin-left: 0;
+    padding: 0;
+    justify-items: center;
+    justify-content: space-evenly;
+
   }
   }
 

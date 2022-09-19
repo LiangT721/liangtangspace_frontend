@@ -162,8 +162,8 @@
       grid-template-columns: 1fr;
       height: min-content;
       background-color: rgba(255, 255, 255, 0.315);
-      width: 80%;
-      margin-left: 10%;
+      width: 85%;
+      margin-left: 7.5%;
       border-radius: 5px;
       overflow: hidden;
       box-shadow: $shadow-dark;
@@ -171,9 +171,7 @@
 
     &__text {
       padding: 2rem 0;
-      // row-gap: 1rem;
       display: block;
-      // grid-template-rows: repeat(2, min-content) 1fr repeat(2, min-content);
       text-align: end;
       justify-items: end;
 
@@ -221,7 +219,7 @@
     &__title,
     &__sub-description,
     &__btns {
-      padding-right: 2rem;
+      margin: 0 2rem;
     }
     &__btns {
      float: right;

@@ -17,6 +17,10 @@
       height: 1px;
       background-color: $color-font-bright;
     }
+
+    @media only screen and ( max-width:$bp-sm) {
+      width: 50%;
+    }
   }
 
   &__text{
