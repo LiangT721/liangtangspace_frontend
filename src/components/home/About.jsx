@@ -5,9 +5,10 @@ const About = () => {
     <div id="about"  className="home__about">
       <h3 className="heading-3 home__about-heading">About me</h3>
       <div className="home__about__text-container">
-        <p className="mb-md">My name is Liang Tang. I am a Full Stack Web Developer with a great passion for web development. I am looking for the job or internship in web development.</p>
+        <p className="home__about__text-1">I'm Liang Tang, a Web Developer with a great passion for programming and designing. I am experienced in developing web including full front-end design. I hope my knowledge of programming and design would bring you the most value. 
+        </p>
         <p>
-        I hope my knowledge of programming and design can bring you the most value. Please contact me if you are interested in chatting with me!</p>
+        I spend my free time cooking, photographing, making videos, and playing video games whenever When I not making content or writing code. Please <a className="home__about__a" href="#contact"> <u>contact</u> </a> me if you are interested in chatting with me!</p>
       </div>
       <figure className="home__about__img-container">
         <div className="home__about__img" />

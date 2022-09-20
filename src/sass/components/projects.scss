@@ -51,6 +51,9 @@
       background-color: $color-tertiary;
       border-radius: 2px;
       box-shadow: $shadow-light;
+      @media only screen and (hover: none) {
+       border-radius: 0;
+      }
     }
 
     &-side-front {
@@ -110,6 +113,10 @@
     font-family: $font-text;
     align-self: start;
     padding-top: 2rem;
+    @media only screen and (hover: none) {
+      height: 20rem;
+      overflow: scroll;
+    }
   }
   &__sub-description{
     margin-top: 2rem;

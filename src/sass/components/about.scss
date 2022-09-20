@@ -7,11 +7,24 @@
   column-gap: 6rem;
   padding-bottom: 20rem;
 
+  &__text-1{
+    margin-bottom: 3rem;
+  }
+
+  &__a {
+    color: $color-font-bright;
+    font-style: italic;
+    transition: all .2s;
+    &:hover {
+      font-style: normal;
+    }
+  }
+
   @media only screen and (max-width: $bp-hg) {
     width: 70%;
     margin-left: 15%;
   }
-  @media only screen and (max-width: $bp-md) {
+  @media only screen and (max-width: $bp-lg) {
     grid-template-columns: 2fr 2fr;
     align-items: center;
     column-gap: 4rem;
@@ -40,6 +53,9 @@
     padding: 3rem;
     aspect-ratio: 1 / 1;
     cursor: pointer;
+    @media only screen and (max-width: $bp-md) {
+      padding: 1rem;
+    }
   }
   &__img-container:hover &__img {
     background-image: url("../../imgs/portrait.png");
@@ -66,6 +82,10 @@
     transition: all 0.3s linear;
     z-index: 3;
 
+    @media only screen and (max-width: $bp-lg) {
+      width: 90%;
+      height: 90%;
+    }
     @media only screen and (max-width: $bp-md) {
       width: 100%;
       height: 100%;
